@@ -1,0 +1,228 @@
+2026-11-02 01:28:26 | INFO    | pipeline   | ▶ 1. Carga y validación
+2026-11-02 01:29:03 | INFO    | pipeline   | 541,909 filas, 4,372 clientes, nulos CustomerID=135,080
+2026-11-02 01:29:03 | INFO    | pipeline   | ✔ 1. Carga y validación (36.91 s)
+2026-11-02 01:29:03 | INFO    | pipeline   | ▶ 2. Limpieza
+2026-11-02 01:29:05 | INFO    | pipeline   |   Duplicados exactos: -5,268 filas
+2026-11-02 01:29:05 | INFO    | pipeline   |   Sin CustomerID: -135,037 filas
+2026-11-02 01:29:05 | INFO    | pipeline   |   Códigos no-producto: -1,915 filas
+2026-11-02 01:29:05 | INFO    | pipeline   |   Cancelaciones (facturas 'C'): -8,506 filas
+2026-11-02 01:29:05 | INFO    | pipeline   |   Cantidad <= 0: -0 filas
+2026-11-02 01:29:05 | INFO    | pipeline   |   Precio unitario <= 0: -33 filas
+2026-11-02 01:29:05 | INFO    | pipeline   | ✔ 2. Limpieza (2.47 s)
+2026-11-02 01:29:05 | INFO    | pipeline   | ▶ 3. Ingeniería de características (RFM)
+2026-11-02 01:29:06 | INFO    | pipeline   | 4,334 clientes · variables: ['Recency', 'Frequency', 'Monetary', 'AvgTicket', 'UniqueProducts']
+2026-11-02 01:29:06 | INFO    | pipeline   | ✔ 3. Ingeniería de características (RFM) (0.47 s)
+2026-11-02 01:29:06 | INFO    | pipeline   | ▶ 4. Entrenamiento y comparación de modelos
+2026-11-02 01:29:06 | INFO    | modelos    | K-Means: búsqueda de k (2-10)
+2026-11-02 01:29:09 | INFO    | modelos    | Jerárquico (Ward): búsqueda de k
+2026-11-02 01:29:16 | INFO    | modelos    | GMM: búsqueda de k por BIC
+2026-11-02 01:29:21 | INFO    | modelos    | DBSCAN: rejilla eps x min_samples
+2026-11-02 01:29:28 | INFO    | modelos    | HDBSCAN: rejilla min_cluster_size x min_samples
+2026-11-02 01:29:33 | INFO    | modelos    | Evaluando K-Means {'k': 3}
+2026-11-02 01:29:34 | INFO    | modelos    | Evaluando Jerárquico (Ward) {'k': 3}
+2026-11-02 01:29:36 | INFO    | modelos    | Evaluando GMM {'k': 6}
+2026-11-02 01:29:40 | INFO    | modelos    | Evaluando DBSCAN {'eps': 0.7, 'min_samples': 5}
+2026-11-02 01:29:41 | INFO    | modelos    | Evaluando HDBSCAN {'min_cluster_size': 20, 'min_samples': 20}
+2026-11-02 01:29:42 | INFO    | pipeline   | Modelo seleccionado: K-Means
+2026-11-02 01:29:42 | INFO    | pipeline   | ✔ 4. Entrenamiento y comparación de modelos (36.11 s)
+2026-11-02 01:29:42 | INFO    | pipeline   | ▶ 5. Perfilamiento de segmentos
+2026-11-02 01:29:42 | INFO    | pipeline   |   Segmento 0 · Campeones: 1,066 clientes, 73.8% ingresos
+2026-11-02 01:29:42 | INFO    | pipeline   |   Segmento 1 · En riesgo: 1,866 clientes, 22.5% ingresos
+2026-11-02 01:29:42 | INFO    | pipeline   |   Segmento 2 · Perdidos / inactivos: 1,402 clientes, 3.8% ingresos
+2026-11-02 01:29:42 | INFO    | pipeline   | ✔ 5. Perfilamiento de segmentos (0.06 s)
+2026-11-02 01:29:42 | INFO    | pipeline   | ▶ 6. Figuras
+2026-11-02 01:29:43 | INFO    | pipeline   | ✔ 6. Figuras (1.02 s)
+2026-11-02 01:29:43 | INFO    | pipeline   | Pipeline finalizado: OK en 77.1 s
+2026-11-02 01:29:56 | INFO    | pipeline   | ▶ 1. Carga y validación
+2026-11-02 01:30:31 | INFO    | pipeline   | 541,909 filas, 4,372 clientes, nulos CustomerID=135,080
+2026-11-02 01:30:31 | INFO    | pipeline   | ✔ 1. Carga y validación (35.52 s)
+2026-11-02 01:30:31 | INFO    | pipeline   | ▶ 2. Limpieza
+2026-11-02 01:30:33 | INFO    | pipeline   |   Duplicados exactos: -5,268 filas
+2026-11-02 01:30:33 | INFO    | pipeline   |   Sin CustomerID: -135,037 filas
+2026-11-02 01:30:33 | INFO    | pipeline   |   Códigos no-producto: -1,915 filas
+2026-11-02 01:30:33 | INFO    | pipeline   |   Cancelaciones (facturas 'C'): -8,506 filas
+2026-11-02 01:30:33 | INFO    | pipeline   |   Cantidad <= 0: -0 filas
+2026-11-02 01:30:33 | INFO    | pipeline   |   Precio unitario <= 0: -33 filas
+2026-11-02 01:30:34 | INFO    | pipeline   | ✔ 2. Limpieza (2.23 s)
+2026-11-02 01:30:34 | INFO    | pipeline   | ▶ 3. Ingeniería de características (RFM)
+2026-11-02 01:30:34 | INFO    | pipeline   | 4,334 clientes · variables: ['Recency', 'Frequency', 'Monetary', 'AvgTicket', 'UniqueProducts']
+2026-11-02 01:30:34 | INFO    | pipeline   | ✔ 3. Ingeniería de características (RFM) (0.42 s)
+2026-11-02 01:30:34 | INFO    | pipeline   | ▶ 4. Entrenamiento y comparación de modelos
+2026-11-02 01:30:34 | INFO    | modelos    | K-Means: búsqueda de k (2-10)
+2026-11-02 01:30:37 | INFO    | modelos    | Jerárquico (Ward): búsqueda de k
+2026-11-02 01:30:45 | INFO    | modelos    | GMM: búsqueda de k por BIC
+2026-11-02 01:30:50 | INFO    | modelos    | DBSCAN: rejilla eps x min_samples
+2026-11-02 01:30:57 | INFO    | modelos    | HDBSCAN: rejilla min_cluster_size x min_samples
+2026-11-02 01:31:01 | INFO    | modelos    | Evaluando K-Means {'k': 4}
+2026-11-02 01:31:02 | INFO    | modelos    | Evaluando Jerárquico (Ward) {'k': 5}
+2026-11-02 01:31:05 | INFO    | modelos    | Evaluando GMM {'k': 6}
+2026-11-02 01:31:09 | INFO    | modelos    | Evaluando DBSCAN {'eps': 0.6, 'min_samples': 5}
+2026-11-02 01:31:10 | INFO    | modelos    | Evaluando HDBSCAN {'min_cluster_size': 20, 'min_samples': 20}
+2026-11-02 01:31:11 | INFO    | pipeline   | Modelo seleccionado: K-Means
+2026-11-02 01:31:11 | INFO    | pipeline   | ✔ 4. Entrenamiento y comparación de modelos (37.06 s)
+2026-11-02 01:31:11 | INFO    | pipeline   | ▶ 5. Perfilamiento de segmentos
+2026-11-02 01:31:11 | INFO    | pipeline   |   Segmento 0 · Campeones: 860 clientes, 71.2% ingresos
+2026-11-02 01:31:11 | INFO    | pipeline   |   Segmento 1 · Clientes leales: 1,216 clientes, 13.1% ingresos
+2026-11-02 01:31:11 | INFO    | pipeline   |   Segmento 2 · Perdidos / inactivos A: 1,178 clientes, 13.3% ingresos
+2026-11-02 01:31:11 | INFO    | pipeline   |   Segmento 3 · Perdidos / inactivos B: 1,080 clientes, 2.5% ingresos
+2026-11-02 01:31:11 | INFO    | pipeline   | ✔ 5. Perfilamiento de segmentos (0.05 s)
+2026-11-02 01:31:11 | INFO    | pipeline   | ▶ 6. Figuras
+2026-11-02 01:31:12 | INFO    | pipeline   | ✔ 6. Figuras (0.96 s)
+2026-11-02 01:31:12 | INFO    | pipeline   | ▶ 7. Reportes PDF + documentación
+2026-11-02 01:31:12 | INFO    | pipeline   | ✔ 7. Reportes PDF + documentación (0.27 s)
+2026-11-02 01:31:12 | INFO    | pipeline   | Pipeline finalizado: OK en 76.5 s
+2026-11-02 01:31:21 | INFO    | pipeline   | ▶ 1. Carga y validación
+2026-11-02 01:31:57 | INFO    | pipeline   | 541,909 filas, 4,372 clientes, nulos CustomerID=135,080
+2026-11-02 01:31:57 | INFO    | pipeline   | ✔ 1. Carga y validación (35.26 s)
+2026-11-02 01:31:57 | INFO    | pipeline   | ▶ 2. Limpieza
+2026-11-02 01:31:59 | INFO    | pipeline   |   Duplicados exactos: -5,268 filas
+2026-11-02 01:31:59 | INFO    | pipeline   |   Sin CustomerID: -135,037 filas
+2026-11-02 01:31:59 | INFO    | pipeline   |   Códigos no-producto: -1,915 filas
+2026-11-02 01:31:59 | INFO    | pipeline   |   Cancelaciones (facturas 'C'): -8,506 filas
+2026-11-02 01:31:59 | INFO    | pipeline   |   Cantidad <= 0: -0 filas
+2026-11-02 01:31:59 | INFO    | pipeline   |   Precio unitario <= 0: -33 filas
+2026-11-02 01:31:59 | INFO    | pipeline   | ✔ 2. Limpieza (2.6 s)
+2026-11-02 01:31:59 | INFO    | pipeline   | ▶ 3. Ingeniería de características (RFM)
+2026-11-02 01:32:00 | INFO    | pipeline   | 4,334 clientes · variables: ['Recency', 'Frequency', 'Monetary', 'AvgTicket', 'UniqueProducts']
+2026-11-02 01:32:00 | INFO    | pipeline   | ✔ 3. Ingeniería de características (RFM) (0.45 s)
+2026-11-02 01:32:00 | INFO    | pipeline   | ▶ 4. Entrenamiento y comparación de modelos
+2026-11-02 01:32:00 | INFO    | modelos    | K-Means: búsqueda de k (2-10)
+2026-11-02 01:32:03 | INFO    | modelos    | Jerárquico (Ward): búsqueda de k
+2026-11-02 01:32:10 | INFO    | modelos    | GMM: búsqueda de k por BIC
+2026-11-02 01:32:15 | INFO    | modelos    | DBSCAN: rejilla eps x min_samples
+2026-11-02 01:32:22 | INFO    | modelos    | HDBSCAN: rejilla min_cluster_size x min_samples
+2026-11-02 01:32:26 | INFO    | modelos    | Evaluando K-Means {'k': 4}
+2026-11-02 01:32:27 | INFO    | modelos    | Evaluando Jerárquico (Ward) {'k': 5}
+2026-11-02 01:32:30 | INFO    | modelos    | Evaluando GMM {'k': 6}
+2026-11-02 01:32:34 | INFO    | modelos    | Evaluando DBSCAN {'eps': 0.6, 'min_samples': 5}
+2026-11-02 01:32:36 | INFO    | modelos    | Evaluando HDBSCAN {'min_cluster_size': 20, 'min_samples': 20}
+2026-11-02 01:32:37 | INFO    | pipeline   | Modelo seleccionado: K-Means
+2026-11-02 01:32:37 | INFO    | pipeline   | ✔ 4. Entrenamiento y comparación de modelos (37.1 s)
+2026-11-02 01:32:37 | INFO    | pipeline   | ▶ 5. Perfilamiento de segmentos
+2026-11-02 01:32:37 | INFO    | pipeline   |   Segmento 0 · Campeones: 860 clientes, 71.2% ingresos
+2026-11-02 01:32:37 | INFO    | pipeline   |   Segmento 1 · Clientes leales: 1,216 clientes, 13.1% ingresos
+2026-11-02 01:32:37 | INFO    | pipeline   |   Segmento 2 · Compradores únicos de alto ticket: 1,178 clientes, 13.3% ingresos
+2026-11-02 01:32:37 | INFO    | pipeline   |   Segmento 3 · Perdidos / inactivos: 1,080 clientes, 2.5% ingresos
+2026-11-02 01:32:37 | INFO    | pipeline   | ✔ 5. Perfilamiento de segmentos (0.05 s)
+2026-11-02 01:32:37 | INFO    | pipeline   | ▶ 6. Figuras
+2026-11-02 01:32:38 | INFO    | pipeline   | ✔ 6. Figuras (0.98 s)
+2026-11-02 01:32:38 | INFO    | pipeline   | ▶ 7. Reportes PDF + documentación
+2026-11-02 01:32:38 | INFO    | pipeline   | ✔ 7. Reportes PDF + documentación (0.24 s)
+2026-11-02 01:32:38 | INFO    | pipeline   | Pipeline finalizado: OK en 76.7 s
+2026-11-02 02:23:39 | INFO    | pipeline   | ▶ 1. Carga y validación
+2026-11-02 02:24:17 | INFO    | pipeline   | 541,909 filas, 4,372 clientes, nulos CustomerID=135,080
+2026-11-02 02:24:17 | INFO    | pipeline   | ✔ 1. Carga y validación (38.01 s)
+2026-11-02 02:24:17 | INFO    | pipeline   | ▶ 2. Limpieza
+2026-11-02 02:24:19 | INFO    | pipeline   |   Duplicados exactos: -5,268 filas
+2026-11-02 02:24:19 | INFO    | pipeline   |   Sin CustomerID: -135,037 filas
+2026-11-02 02:24:19 | INFO    | pipeline   |   Códigos no-producto: -1,915 filas
+2026-11-02 02:24:19 | INFO    | pipeline   |   Cancelaciones (facturas 'C'): -8,506 filas
+2026-11-02 02:24:19 | INFO    | pipeline   |   Cantidad <= 0: -0 filas
+2026-11-02 02:24:19 | INFO    | pipeline   |   Precio unitario <= 0: -33 filas
+2026-11-02 02:24:19 | INFO    | pipeline   | ✔ 2. Limpieza (2.83 s)
+2026-11-02 02:24:19 | INFO    | pipeline   | ▶ 3. Ingeniería de características (RFM)
+2026-11-02 02:24:20 | INFO    | pipeline   | 4,334 clientes · variables: ['Recency', 'Frequency', 'Monetary', 'AvgTicket', 'UniqueProducts']
+2026-11-02 02:24:20 | INFO    | pipeline   | ✔ 3. Ingeniería de características (RFM) (0.47 s)
+2026-11-02 02:24:20 | INFO    | pipeline   | ▶ 4. Entrenamiento y comparación de modelos
+2026-11-02 02:24:20 | INFO    | modelos    | K-Means: búsqueda de k (2-10)
+2026-11-02 02:24:24 | INFO    | modelos    | Jerárquico (Ward): búsqueda de k
+2026-11-02 02:24:30 | INFO    | modelos    | GMM: búsqueda de k por BIC
+2026-11-02 02:24:35 | INFO    | modelos    | DBSCAN: rejilla eps x min_samples
+2026-11-02 02:24:43 | INFO    | modelos    | HDBSCAN: rejilla min_cluster_size x min_samples
+2026-11-02 02:24:47 | INFO    | modelos    | Evaluando K-Means {'k': 4}
+2026-11-02 02:24:48 | INFO    | modelos    | Evaluando Jerárquico (Ward) {'k': 5}
+2026-11-02 02:24:51 | INFO    | modelos    | Evaluando GMM {'k': 6}
+2026-11-02 02:24:55 | INFO    | modelos    | Evaluando DBSCAN {'eps': 0.6, 'min_samples': 5}
+2026-11-02 02:24:55 | INFO    | modelos    | Evaluando HDBSCAN {'min_cluster_size': 20, 'min_samples': 20}
+2026-11-02 02:24:56 | INFO    | pipeline   | Modelo seleccionado: K-Means
+2026-11-02 02:24:56 | INFO    | pipeline   | ✔ 4. Entrenamiento y comparación de modelos (36.35 s)
+2026-11-02 02:24:56 | INFO    | pipeline   | ▶ 5. Perfilamiento de segmentos
+2026-11-02 02:24:57 | INFO    | pipeline   |   Segmento 0 · Campeones: 860 clientes, 71.2% ingresos
+2026-11-02 02:24:57 | INFO    | pipeline   |   Segmento 1 · Clientes leales: 1,216 clientes, 13.1% ingresos
+2026-11-02 02:24:57 | INFO    | pipeline   |   Segmento 2 · Compradores únicos de alto ticket: 1,178 clientes, 13.3% ingresos
+2026-11-02 02:24:57 | INFO    | pipeline   |   Segmento 3 · Perdidos / inactivos: 1,080 clientes, 2.5% ingresos
+2026-11-02 02:24:57 | INFO    | pipeline   | ✔ 5. Perfilamiento de segmentos (0.42 s)
+2026-11-02 02:24:57 | INFO    | pipeline   | ▶ 6. Figuras
+2026-11-02 02:24:58 | INFO    | pipeline   | ✔ 6. Figuras (1.0 s)
+2026-11-02 02:24:58 | INFO    | pipeline   | ▶ 7. Reportes PDF + documentación
+2026-11-02 02:24:58 | INFO    | pipeline   | ✔ 7. Reportes PDF + documentación (0.26 s)
+2026-11-02 02:24:58 | INFO    | pipeline   | Pipeline finalizado: OK en 79.3 s
+2026-11-02 02:26:03 | INFO    | dashboard  | Vista abierta: Métodos y conclusiones
+2026-11-02 02:26:11 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-02 02:26:11 | INFO    | dashboard  | Vista abierta: Datos y calidad
+2026-11-02 02:26:11 | INFO    | dashboard  | Vista abierta: Análisis RFM
+2026-11-02 02:26:11 | INFO    | dashboard  | Vista abierta: Comparación de modelos
+2026-11-02 02:26:11 | INFO    | dashboard  | Vista abierta: Segmentos
+2026-11-02 02:26:11 | INFO    | dashboard  | Vista abierta: Métodos y conclusiones
+2026-11-01 22:31:40 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-01 22:31:57 | INFO    | dashboard  | Vista abierta: Datos y calidad
+2026-11-01 22:32:01 | INFO    | dashboard  | Vista abierta: Análisis RFM
+2026-11-01 22:32:40 | INFO    | dashboard  | Vista abierta: Comparación de modelos
+2026-11-01 22:32:53 | INFO    | dashboard  | Vista abierta: Segmentos
+2026-11-05 08:16:46 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-05 08:17:10 | INFO    | dashboard  | Vista abierta: Datos y calidad
+2026-11-05 08:17:36 | INFO    | dashboard  | Vista abierta: Comparación de modelos
+2026-11-05 08:17:45 | INFO    | dashboard  | Vista abierta: Segmentos
+2026-11-05 08:20:52 | INFO    | dashboard  | Vista abierta: Explorador de clientes
+2026-11-05 08:40:01 | INFO    | dashboard  | Descarga: reporte ejecutivo PDF
+2026-11-09 11:03:18 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-09 11:04:13 | INFO    | dashboard  | Vista abierta: Datos y calidad
+2026-11-09 11:04:46 | INFO    | dashboard  | Vista abierta: Análisis RFM
+2026-11-09 11:05:47 | INFO    | dashboard  | Vista abierta: Comparación de modelos
+2026-11-09 11:06:22 | INFO    | dashboard  | Vista abierta: Segmentos
+2026-11-09 11:07:20 | INFO    | dashboard  | Vista abierta: Métodos y conclusiones
+2026-11-09 11:13:34 | INFO    | dashboard  | Vista abierta: Explorador de clientes
+2026-11-09 11:16:45 | INFO    | dashboard  | Vista abierta: Clasificador de clientes
+2026-11-09 11:17:49 | INFO    | dashboard  | Vista abierta: Reportes y descargas
+2026-11-09 11:18:05 | INFO    | dashboard  | Vista abierta: Bitácora
+2026-11-09 16:49:03 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-10 08:32:23 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-10 08:32:36 | INFO    | dashboard  | Vista abierta: Comparación de modelos
+2026-11-11 11:29:36 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-11 11:37:18 | INFO    | dashboard  | Vista abierta: Bitácora
+2026-11-11 11:39:26 | INFO    | dashboard  | Vista abierta: Datos y calidad
+2026-11-11 20:00:43 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-11 20:03:48 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-11 20:10:26 | INFO    | pipeline   | ▶ 1. Carga y validación
+2026-11-11 20:11:25 | INFO    | pipeline   | 541,909 filas, 4,372 clientes, nulos CustomerID=135,080
+2026-11-11 20:11:25 | INFO    | pipeline   | ✔ 1. Carga y validación (59.04 s)
+2026-11-11 20:11:25 | INFO    | pipeline   | ▶ 2. Limpieza
+2026-11-11 20:11:28 | INFO    | pipeline   |   Duplicados exactos: -5,268 filas
+2026-11-11 20:11:28 | INFO    | pipeline   |   Sin CustomerID: -135,037 filas
+2026-11-11 20:11:28 | INFO    | pipeline   |   Códigos no-producto: -1,915 filas
+2026-11-11 20:11:28 | INFO    | pipeline   |   Cancelaciones (facturas 'C'): -8,506 filas
+2026-11-11 20:11:28 | INFO    | pipeline   |   Cantidad <= 0: -0 filas
+2026-11-11 20:11:28 | INFO    | pipeline   |   Precio unitario <= 0: -33 filas
+2026-11-11 20:11:29 | INFO    | pipeline   | ✔ 2. Limpieza (3.81 s)
+2026-11-11 20:11:29 | INFO    | pipeline   | ▶ 3. Ingeniería de características (RFM)
+2026-11-11 20:11:31 | INFO    | pipeline   | 4,334 clientes · variables: ['Recency', 'Frequency', 'Monetary', 'AvgTicket', 'UniqueProducts']
+2026-11-11 20:11:31 | INFO    | pipeline   | ✔ 3. Ingeniería de características (RFM) (2.1 s)
+2026-11-11 20:11:31 | INFO    | pipeline   | ▶ 4. Entrenamiento y comparación de modelos
+2026-11-11 20:11:31 | INFO    | modelos    | K-Means: búsqueda de k (2-10)
+2026-11-11 20:11:39 | INFO    | modelos    | Jerárquico (Ward): búsqueda de k
+2026-11-11 20:11:48 | INFO    | modelos    | GMM: búsqueda de k por BIC
+2026-11-11 20:11:57 | INFO    | modelos    | DBSCAN: rejilla eps x min_samples
+2026-11-11 20:12:10 | INFO    | modelos    | HDBSCAN: rejilla min_cluster_size x min_samples
+2026-11-11 20:12:17 | INFO    | modelos    | Evaluando K-Means {'k': 4}
+2026-11-11 20:12:19 | INFO    | modelos    | Evaluando Jerárquico (Ward) {'k': 5}
+2026-11-11 20:12:24 | INFO    | modelos    | Evaluando GMM {'k': 6}
+2026-11-11 20:12:32 | INFO    | modelos    | Evaluando DBSCAN {'eps': 0.6, 'min_samples': 5}
+2026-11-11 20:12:33 | INFO    | modelos    | Evaluando HDBSCAN {'min_cluster_size': 20, 'min_samples': 20}
+2026-11-11 20:12:36 | INFO    | pipeline   | Modelo seleccionado: K-Means
+2026-11-11 20:12:36 | INFO    | pipeline   | ✔ 4. Entrenamiento y comparación de modelos (65.04 s)
+2026-11-11 20:12:36 | INFO    | pipeline   | ▶ 5. Perfilamiento de segmentos
+2026-11-11 20:12:36 | INFO    | pipeline   |   Segmento 0 · Campeones: 860 clientes, 71.2% ingresos
+2026-11-11 20:12:36 | INFO    | pipeline   |   Segmento 1 · Clientes leales: 1,216 clientes, 13.1% ingresos
+2026-11-11 20:12:36 | INFO    | pipeline   |   Segmento 2 · Compradores únicos de alto ticket: 1,178 clientes, 13.3% ingresos
+2026-11-11 20:12:36 | INFO    | pipeline   |   Segmento 3 · Perdidos / inactivos: 1,080 clientes, 2.5% ingresos
+2026-11-11 20:12:36 | INFO    | pipeline   | ✔ 5. Perfilamiento de segmentos (0.14 s)
+2026-11-11 20:12:36 | INFO    | pipeline   | ▶ 6. Figuras
+2026-11-11 20:12:38 | INFO    | pipeline   | ✔ 6. Figuras (2.59 s)
+2026-11-11 20:12:38 | INFO    | pipeline   | ▶ 7. Reportes PDF + documentación
+2026-11-11 20:12:40 | INFO    | pipeline   | ✔ 7. Reportes PDF + documentación (1.56 s)
+2026-11-11 20:12:40 | INFO    | pipeline   | Pipeline finalizado: OK en 134.3 s
+2026-11-11 20:18:48 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-11 21:21:17 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-11 21:21:26 | INFO    | dashboard  | Vista abierta: Métodos y conclusiones
+2026-11-12 08:11:02 | INFO    | dashboard  | Vista abierta: Resumen
+2026-11-12 08:26:32 | INFO    | dashboard  | Vista abierta: Comparación de modelos

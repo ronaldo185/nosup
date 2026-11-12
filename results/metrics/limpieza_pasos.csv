@@ -1,0 +1,7 @@
+paso,filas_antes,filas_despues,eliminadas,motivo
+Duplicados exactos,541909,536641,5268,Registros repetidos inflan frecuencia y gasto
+Sin CustomerID,536641,401604,135037,No se puede segmentar sin identificar al cliente
+Códigos no-producto,401604,399689,1915,"POST, DOT, BANK CHARGES, etc. no son compras de producto"
+Cancelaciones (facturas 'C'),399689,391183,8506,Se separan: alimentan la tasa de devolución
+Cantidad <= 0,391183,391183,0,"Ajustes/pérdidas, no ventas"
+Precio unitario <= 0,391183,391150,33,Ajustes contables / regalos sin valor

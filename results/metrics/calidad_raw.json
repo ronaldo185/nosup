@@ -1,0 +1,24 @@
+{
+  "filas": 541909,
+  "columnas": 8,
+  "fecha_min": "2010-12-01 08:26:00",
+  "fecha_max": "2011-12-09 12:50:00",
+  "clientes_unicos": 4372,
+  "facturas_unicas": 25900,
+  "productos_unicos": 4070,
+  "paises": 38,
+  "nulos": {
+    "InvoiceNo": 0,
+    "StockCode": 0,
+    "Description": 1454,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "UnitPrice": 0,
+    "CustomerID": 135080,
+    "Country": 0
+  },
+  "duplicados_exactos": 5268,
+  "cancelaciones": 9288,
+  "cantidad_no_positiva": 10624,
+  "precio_no_positivo": 2517
+}

@@ -1,0 +1,29 @@
+{
+  "clientes": 4334,
+  "facturas": 18402,
+  "ingresos": 8737227.64,
+  "filas_raw": 541909,
+  "filas_limpias": 391150,
+  "fecha_min": "2010-12-01 08:26:00",
+  "fecha_max": "2011-12-09 12:50:00",
+  "modelo_final": "K-Means",
+  "modelo_final_params": "{'k': 4}",
+  "n_segmentos": 4,
+  "silhouette_final": 0.23708814675018372,
+  "davies_bouldin_final": 1.3000188427964225,
+  "calinski_final": 2014.9790143710034,
+  "estabilidad_final": 0.9070959026770943,
+  "pct_ruido_final": 0.0,
+  "features": [
+    "Recency",
+    "Frequency",
+    "Monetary",
+    "AvgTicket",
+    "UniqueProducts"
+  ],
+  "pca_var": [
+    0.6174569607856923,
+    0.20490823886611437
+  ],
+  "fecha_referencia_recencia": "2011-12-10 00:00:00"
+}

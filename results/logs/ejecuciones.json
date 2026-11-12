@@ -1,0 +1,86 @@
+[
+  {
+    "inicio": "2026-11-02T01:28:26.616421",
+    "duracion_s": 77.1,
+    "estado": "OK",
+    "etapas": {
+      "1. Carga y validación": 36.91,
+      "2. Limpieza": 2.47,
+      "3. Ingeniería de características (RFM)": 0.47,
+      "4. Entrenamiento y comparación de modelos": 36.11,
+      "5. Perfilamiento de segmentos": 0.06,
+      "6. Figuras": 1.02
+    },
+    "k_forzado": null,
+    "modelo_final": "K-Means",
+    "n_segmentos": 3
+  },
+  {
+    "inicio": "2026-11-02T01:29:56.391893",
+    "duracion_s": 76.5,
+    "estado": "OK",
+    "etapas": {
+      "1. Carga y validación": 35.52,
+      "2. Limpieza": 2.23,
+      "3. Ingeniería de características (RFM)": 0.42,
+      "4. Entrenamiento y comparación de modelos": 37.06,
+      "5. Perfilamiento de segmentos": 0.05,
+      "6. Figuras": 0.96,
+      "7. Reportes PDF + documentación": 0.27
+    },
+    "k_forzado": null,
+    "modelo_final": "K-Means",
+    "n_segmentos": 4
+  },
+  {
+    "inicio": "2026-11-02T01:31:21.868983",
+    "duracion_s": 76.7,
+    "estado": "OK",
+    "etapas": {
+      "1. Carga y validación": 35.26,
+      "2. Limpieza": 2.6,
+      "3. Ingeniería de características (RFM)": 0.45,
+      "4. Entrenamiento y comparación de modelos": 37.1,
+      "5. Perfilamiento de segmentos": 0.05,
+      "6. Figuras": 0.98,
+      "7. Reportes PDF + documentación": 0.24
+    },
+    "k_forzado": null,
+    "modelo_final": "K-Means",
+    "n_segmentos": 4
+  },
+  {
+    "inicio": "2026-11-02T02:23:39.032871",
+    "duracion_s": 79.3,
+    "estado": "OK",
+    "etapas": {
+      "1. Carga y validación": 38.01,
+      "2. Limpieza": 2.83,
+      "3. Ingeniería de características (RFM)": 0.47,
+      "4. Entrenamiento y comparación de modelos": 36.35,
+      "5. Perfilamiento de segmentos": 0.42,
+      "6. Figuras": 1.0,
+      "7. Reportes PDF + documentación": 0.26
+    },
+    "k_forzado": null,
+    "modelo_final": "K-Means",
+    "n_segmentos": 4
+  },
+  {
+    "inicio": "2026-11-11T20:10:26.190370",
+    "duracion_s": 134.3,
+    "estado": "OK",
+    "etapas": {
+      "1. Carga y validación": 59.04,
+      "2. Limpieza": 3.81,
+      "3. Ingeniería de características (RFM)": 2.1,
+      "4. Entrenamiento y comparación de modelos": 65.04,
+      "5. Perfilamiento de segmentos": 0.14,
+      "6. Figuras": 2.59,
+      "7. Reportes PDF + documentación": 1.56
+    },
+    "k_forzado": null,
+    "modelo_final": "K-Means",
+    "n_segmentos": 4
+  }
+]

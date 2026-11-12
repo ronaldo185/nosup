@@ -1,0 +1,5 @@
+Segmento,Clientes,Recency,Frequency,Monetary,AvgTicket,UniqueProducts,ReturnRate,Ingresos,PctClientes,PctIngresos,Nombre,Recomendacion
+0,860,11.0,8.5,3443.27,418.35,123.0,0.15,6217389.53,19.84,71.16,Campeones,"Programa VIP, acceso anticipado a novedades y pedidos personalizados. Proteger la relación: son la base de ingresos."
+1,1216,23.0,3.0,847.84,242.42,51.0,0.1,1142386.76,28.06,13.07,Clientes leales,"Venta cruzada, programa de puntos y descuentos por volumen para aumentar el ticket medio."
+2,1178,116.0,1.0,600.18,401.08,28.0,0.11,1161633.04,27.18,13.3,Compradores únicos de alto ticket,"Compraron una sola vez un pedido grande y no volvieron: contacto comercial directo, oferta de recompra y revisión de su experiencia."
+3,1080,144.0,1.0,175.6,141.89,10.0,0.05,215818.31,24.92,2.47,Perdidos / inactivos,Campaña de bajo costo de 'te extrañamos'; no invertir en retención intensiva.
