@@ -1,0 +1,9 @@
+Name,Role,Type,Units,Description,Missing Values
+InvoiceNo,id,categorical,,a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation,No
+StockCode,id,categorical,,a 5-digit integral number uniquely assigned to each distinct product,No
+Description,feature,categorical,,product name,No
+Quantity,feature,integer,,the quantities of each product (item) per transaction,No
+InvoiceDate,feature,date,,the day and time when each transaction was generated,No
+UnitPrice,feature,continuous,sterling,product price per unit,No
+CustomerID,feature,categorical,,a 5-digit integral number uniquely assigned to each customer,No
+Country,feature,categorical,,the name of the country where each customer resides,No
